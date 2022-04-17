@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "e61dfdf8-3320-4c2a-a912-24edcf861e4c",
+		"name": "scorepluse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Varun\",\r\n    \"lastName\": \"Chaudhary\",\r\n    \"email\": \"a@mailinator.com\",\r\n    \"mobileNumber\": \"7983270583\",\r\n    \"password\": \"varun123@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/signUp",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"a@mailinator.com\",\r\n    \"password\": \"varun123@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProfile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjVjMGUwNjYxMzMzZTU3NzViZWVlZmUiLCJlbWFpbCI6ImFAbWFpbGluYXRvci5jb20iLCJpYXQiOjE2NTAyMDAzNDQsImV4cCI6MTY1MDI4Njc0NH0.mX3yC6Yz6Rx2IFxI-u3LhP7Fg15aqUo4vgTbaMjmS6I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/user/getProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"getProfile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
